@@ -1,4 +1,4 @@
-package com.test;
+package com.test.classloader;
 
 /**
  * @author ：fei
@@ -7,11 +7,11 @@ package com.test;
 public class MyTest12 {
     public static void main(String[] args) throws Exception {
         ClassLoader loader = ClassLoader.getSystemClassLoader();
-        Class<?> aClass = loader.loadClass("com.test.CL");
+        Class<?> aClass = loader.loadClass("com.test.classloader.CL");
         System.out.println(aClass);
 
         System.out.println("------------");
-        Class<?> aClass1 = Class.forName("com.test.CL");
+        Class<?> aClass1 = Class.forName("com.test.classloader.CL");
         System.out.println(aClass1);
     }
 }

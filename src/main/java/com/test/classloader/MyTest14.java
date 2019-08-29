@@ -1,4 +1,4 @@
-package com.test;
+package com.test.classloader;
 
 import java.net.URL;
 
